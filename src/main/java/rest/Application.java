@@ -4,7 +4,7 @@ import javax.ws.rs.ApplicationPath;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
-@ApplicationPath("/rs/")
+@ApplicationPath("/blacklist-rs/")
 public class Application extends ResourceConfig {
 
 	public Application() {
