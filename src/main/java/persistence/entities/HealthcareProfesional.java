@@ -8,6 +8,25 @@ import javax.persistence.Id;
 public class HealthcareProfesional extends Person {
 
 	@Column
-	String doctor_id;
+	private String doctor_id;
+
+	@Column(name = "practice_address")
+	private Address personalAddress;
+
+	public String getDoctor_id() {
+		return doctor_id;
+	}
+
+	public void setDoctor_id(String doctor_id) {
+		this.doctor_id = doctor_id;
+	}
+
+	public Address getPersonalAddress() {
+		return personalAddress;
+	}
+
+	public void setPersonalAddress(Address personalAddress) {
+		this.personalAddress = personalAddress;
+	}
 
 }

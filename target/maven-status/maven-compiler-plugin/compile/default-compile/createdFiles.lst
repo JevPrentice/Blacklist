@@ -1,8 +1,7 @@
 persistence\entities\HealthcareProfesional.class
 persistence\entities\Person.class
 rest\Application.class
+persistence\entities\Address.class
 rest\Filter.class
-persistence\entities\Person_.class
-persistence\entities\HealthcareProfesional_.class
 rest\Blacklist.class
 persistence\PersistenceBean.class

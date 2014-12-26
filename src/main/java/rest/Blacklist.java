@@ -26,7 +26,7 @@ public class Blacklist {
 				return Response.status(Status.INTERNAL_SERVER_ERROR).build();
 			}
 
-			json = db.getDoctors();
+			json = db.getAllDoctors();
 
 		} catch (Exception e) {
 			e.printStackTrace();
