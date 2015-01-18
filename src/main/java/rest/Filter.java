@@ -10,6 +10,7 @@ import javax.ws.rs.ext.Provider;
 
 @Provider
 public class Filter implements ContainerRequestFilter, ContainerResponseFilter {
+
 	@Override
 	public void filter(ContainerRequestContext containerRequestContext)
 			throws IOException {

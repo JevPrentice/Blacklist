@@ -16,6 +16,16 @@ public class Blacklist {
 	PersistenceBean db;
 
 	@GET
+	@Path("/test/")
+	public String test() {
+		
+		
+		
+		// return Response.status(Status.OK).build();
+		return "ITS ALIVE";
+	}
+
+	@GET
 	@Path("/getDoctors/")
 	public Response getDoctors() {
 		JsonArray json = null;

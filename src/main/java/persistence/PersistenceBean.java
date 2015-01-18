@@ -4,24 +4,25 @@ import javax.annotation.Resource;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.json.JsonArray;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.sql.DataSource;
-
-import persistence.entities.HealthcareProfesional;
 
 @Stateless
 @LocalBean
 public class PersistenceBean {
 
-	public PersistenceBean() {
-	}
+	@PersistenceContext(name = "Blacklist")
+	EntityManager em;
 
 	@Resource
 	private DataSource dataStore;
 
+	public PersistenceBean() {
+	}
+
 	public JsonArray getAllDoctors() {
-		
-		
-		
+
 		return null;
 
 	}
@@ -30,12 +31,12 @@ public class PersistenceBean {
 
 	}
 
-	public void createDoctor(HealthcareProfesional healthcareProfesional) {
-
-	}
-
-	public void updateDoctor(HealthcareProfesional healthcareProfesional) {
-
-	}
+	// public void createDoctor(HealthcareProfesional healthcareProfesional) {
+	//
+	// }
+	//
+	// public void updateDoctor(HealthcareProfesional healthcareProfesional) {
+	//
+	// }
 
 }
